@@ -1,0 +1,24 @@
+LG Valeting - Supabase Email Code Verification
+
+1) Supabase > Project Settings > API
+- Copy your Project URL into auth-config.js
+- Copy your Publishable key (sb_publishable_...) into auth-config.js
+- Do NOT use the Secret/service_role key in the website.
+
+2) Supabase > Authentication > URL Configuration
+Site URL:
+https://lgvaleting.com
+
+Redirect URLs:
+https://lgvaleting.com/*
+https://www.lgvaleting.com/*
+https://*.pages.dev/*
+
+3) Supabase > Authentication > Providers > Email
+Enable email confirmations.
+
+4) Supabase > Authentication > Email Templates > Confirm signup
+Use your branded template with {{ .Token }} included.
+The website now displays a 8-digit code screen after signup and verifies it using Supabase verifyOtp.
+
+5) Upload the updated ZIP to Cloudflare Pages.

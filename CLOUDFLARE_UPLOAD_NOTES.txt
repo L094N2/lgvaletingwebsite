@@ -1,0 +1,9 @@
+Upload this whole ZIP to Cloudflare Pages Direct Upload.
+
+Separate mini-sites included:
+- /booking/ for booking system
+- /profile/ for login/profile/logout
+- /admin/ for master/admin panel
+
+Homepage hides booking/admin panels until users press the buttons/links.
+Master login: master@lgvaleting.com / LGMaster2026!

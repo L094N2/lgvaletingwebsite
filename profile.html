@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile · LG Valeting</title>
+  <meta name="description" content="Login, logout and manage your LG Valeting profile." />
+  <meta property="og:title" content="LG Valeting · Premium Mobile Valeting & Detailing" />
+  <meta property="og:description" content="Mobile valeting in Crofton, Wakefield. Book online with LG Valeting." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="profile">
+  <header class="site-header" id="header">
+    <nav class="nav shell glass-soft">
+      <a href="/" class="brand" aria-label="LG Valeting home"><img src="assets/lg-valeting-logo.png" alt="LG Valeting"></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="/#services">Services</a>
+        <a href="/booking/">Booking</a>
+        <a href="/profile/">Profile</a>
+        
+        <a href="/#reviews">Reviews</a>
+        <a href="/#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="pill ghost small" id="profileBtn">Login</button>
+        <a class="pill primary small" href="/booking/">Book Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="route-strip shell glass-soft">
+    <strong>Profile</strong>
+    <span>Manage your account, settings, bookings and logout.</span>
+  </div>
+
+  <main>
+    <section id="top" class="hero">
+      <div class="hero-bg"><img src="assets/hero-car.jpg" alt="Black car being cleaned"><div></div></div>
+      <div class="orb orb-one"></div><div class="orb orb-two"></div>
+      <div class="shell hero-inner">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Crofton · Wakefield · Mobile valeting</div>
+          <img class="hero-logo" src="assets/lg-valeting-logo.png" alt="LG Valeting">
+          <h1>Clean cars, easy bookings, proper results.</h1>
+          <p>Mobile valeting and detailing brought to your driveway. Book online, create an account, track your bookings and leave a verified-style review.</p>
+          <div class="cta-row"><a class="pill primary" href="/booking/">Book Online →</a><a class="pill ghost" href="/#services">View Prices</a></div>
+        </div>
+        <div class="stats glass">
+          <div><strong>From £10</strong><span>Simple wash</span></div>
+          <div><strong>£5</strong><span>Hybrid wax add-on</span></div>
+          <div><strong>Online</strong><span>Booking system</span></div>
+          <div><strong>Local</strong><span>Crofton & Wakefield</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section shell">
+      <div class="section-head"><div><span class="number">01 · Services</span><h2>Packages that fit <em>your car.</em></h2></div><p>Clear pricing, clean presentation and easy upgrades. Pick a service, choose your date, then confirm your booking.</p></div>
+      <div class="cards service-cards">
+        <article class="card glass service-card" data-service="Exterior Wash" data-price="10"><img src="assets/exterior-wash.jpg" alt="Exterior wash"><span>Maintenance</span><h3>£10 Exterior Wash</h3><p>Snow foam pre-soak, contact wash, wheels, tyres and exterior glass.</p><ul><li>Snow foam pre-soak</li><li>Safe contact wash</li><li>Wheels & tyres</li><li>Exterior glass clean</li></ul><button class="book-service">Book this</button></article>
+        <article class="card glass featured service-card" data-service="Full Valet" data-price="15"><img src="assets/full-valet.jpg" alt="Full valet"><span>Most popular</span><h3>£15 Full Valet</h3><p>A full reset for the outside and inside, ideal for regular maintenance.</p><ul><li>Exterior wash</li><li>Interior vacuum</li><li>Dash & trim wipe</li><li>Glass inside & out</li></ul><button class="book-service">Book this</button></article>
+        <article class="card glass service-card" data-service="Deep Interior Clean" data-price="20"><img src="assets/interior-clean.jpg" alt="Deep interior clean"><span>Deep clean</span><h3>£20 Deep Interior Clean</h3><p>Wet vacuum, full wipe down and grime removal for carpets, seats and plastics.</p><ul><li>Wet vacuum extraction</li><li>Fabric refresh</li><li>Trim detail</li><li>Odour neutraliser</li></ul><button class="book-service">Book this</button></article>
+        <article class="card glass service-card" data-service="Hybrid Wax Add-On" data-price="5"><img src="assets/wax-addon.jpg" alt="Hybrid wax"><span>Add-on</span><h3>+£5 Hybrid Wax</h3><p>Hydrophobic gloss protection added onto any wash or valet package.</p><ul><li>Gloss boost</li><li>Water beading</li><li>Fast add-on</li><li>Extra protection</li></ul><button class="book-service">Add to booking</button></article>
+      </div>
+    </section>
+
+    <section id="booking" class="section shell booking-section border-top">
+      <div class="section-head"><div><span class="number">02 · Online booking</span><h2>Book a slot in <em>seconds.</em></h2></div><p>Bookings save into the LG Valeting control panel. Weekday bookings are restricted to one booking per day and only after 4:00pm.</p></div>
+      <div class="booking-layout">
+        <form class="glass booking-form" id="bookingForm">
+          <div class="form-row two"><label>Full name<input required name="name" id="bookingName" placeholder="Your name"></label><label>Email<input required type="email" name="email" id="bookingEmail" placeholder="you@example.com"></label></div>
+          <div class="form-row two"><label>Phone<input required name="phone" id="bookingPhone" placeholder="07919 082109"></label><label>Vehicle<input required name="vehicle" id="bookingVehicle" placeholder="Ford Fiesta, BMW 1 Series..."></label></div>
+          <div class="form-row two"><label>Service<select required name="service" id="bookingService"><option value="Exterior Wash" data-price="10">£10 Exterior Wash</option><option value="Full Valet" data-price="15">£15 Full Valet</option><option value="Deep Interior Clean" data-price="20">£20 Deep Interior Clean</option></select></label><label>Date<input required type="date" name="date" id="bookingDate"></label></div>
+          <div class="form-row two"><label>Preferred time<select required name="time" id="bookingTime"></select></label><label>Location<input required name="location" id="bookingLocation" placeholder="Crofton, Wakefield"></label></div>
+          <label class="check"><input type="checkbox" id="waxAddon" name="hybrid_wax" value="Yes"> Add £5 Hybrid Wax protection</label>
+          <label>Notes<textarea name="notes" id="bookingNotes" rows="4" placeholder="Anything I need to know? Access, car condition, water available, etc."></textarea></label>
+          <div class="booking-total"><span>Estimated total</span><strong id="bookingTotal">£10</strong></div>
+          <button class="pill primary full" type="submit">Request Booking</button>
+          <p class="tiny" id="bookingRuleHint">Weekday rule: Monday–Friday slots only show after 4:00pm. Only one weekday booking can be accepted per date.</p>
+        </form>
+        <aside class="glass dashboard-card">
+          <div class="dash-top"><span class="number">Your profile</span><button id="quickLogin" class="mini-btn">Login / Register</button></div>
+          <h3 id="dashName">Guest customer</h3>
+          <p class="muted" id="dashStatus">Create an account to save your details, bookings and reviews.</p>
+          <div class="mini-stats"><div><strong id="dashBookings">0</strong><span>Bookings</span></div><div><strong id="dashReviews">0</strong><span>Reviews</span></div></div>
+          <div id="bookingList" class="booking-list"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="reviews" class="section shell border-top">
+      <div class="section-head"><div><span class="number">03 · Reviews</span><h2>What customers <em>say.</em></h2></div><p>Customers can leave reviews after a clean. Admins can moderate reviews from the control panel.</p></div>
+      <div class="review-grid" id="reviewGrid"></div>
+      <form class="glass review-form" id="reviewForm">
+        <h3>Leave a review</h3>
+        <div class="form-row three"><label>Name<input required name="review_name" id="reviewName" placeholder="Your name"></label><label>Rating<select required name="rating" id="reviewRating"><option value="5">★★★★★ 5</option><option value="4">★★★★☆ 4</option><option value="3">★★★☆☆ 3</option><option value="2">★★☆☆☆ 2</option><option value="1">★☆☆☆☆ 1</option></select></label><label>Service<input name="review_service" id="reviewService" placeholder="Full Valet"></label></div>
+        <label>Review<textarea required name="review" id="reviewText" rows="3" placeholder="How was the clean?"></textarea></label>
+        <button class="pill primary" type="submit">Post Review</button>
+      </form>
+    </section>
+<section id="gallery" class="section shell border-top">
+      <span class="number">04 · Results</span><h2>Before <b>/</b> <em>After</em></h2><p class="muted">Drag the slider. Real cars, real driveway-style results.</p>
+      <div class="compare-grid">
+        <div><div class="compare glass"><img class="after" src="assets/after-1.jpg" alt="after"><div class="before"><img src="assets/before-1.jpg" alt="before"></div><span class="label left">Before</span><span class="label right">After</span><div class="handle"><i>↔</i></div></div><p class="muted">Exterior + wheel restoration</p></div>
+        <div><div class="compare glass"><img class="after" src="assets/after-2.jpg" alt="after"><div class="before"><img src="assets/before-2.jpg" alt="before"></div><span class="label left">Before</span><span class="label right">After</span><div class="handle"><i>↔</i></div></div><p class="muted">Deep interior reset</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section shell">
+      <div class="contact glass">
+        <div><span class="number">05 · Contact</span><h2>Ready when <br><em>you are.</em></h2><p class="muted">Drop a message, book online or call directly. Based in Crofton, Wakefield.</p><div class="cta-row"><a class="pill primary" href="tel:07919082109">☎ Call 07919 082109</a><a class="pill ghost" href="sms:07919082109">Text to book</a></div></div>
+        <div class="contact-grid"><a class="contact-card glass" href="tel:07919082109"><small>Call or text</small><strong>07919 082109</strong></a><a class="contact-card glass" href="https://www.tiktok.com/@LGValeting" target="_blank"><small>TikTok</small><strong>LG Valeting</strong></a><a class="contact-card glass" href="https://www.facebook.com/profile.php?id=61589888480416&locale=en_GB" target="_blank"><small>Facebook</small><strong>LG Valeting</strong></a><a class="contact-card glass" href="https://maps.google.com/?q=Crofton,Wakefield" target="_blank"><small>Based in</small><strong>Crofton, Wakefield</strong></a></div>
+      </div>
+      <footer><span>© <span id="year"></span> LG Valeting. Owned by Logan Shields. Crofton, Wakefield.</span><span>Built for Cloudflare Pages drag & drop</span></footer>
+    </section>
+  </main>
+
+  <div class="modal" id="authModal" aria-hidden="true">
+    <div class="modal-card glass">
+      <button class="modal-close" id="closeAuth" aria-label="Close account panel">×</button>
+      <span class="number">Customer account</span>
+      <h2 id="authTitle">Login</h2>
+      <div class="tabs" id="authTabs">
+        <button class="active" data-tab="login">Login</button>
+        <button data-tab="register">Register</button>
+        <button data-tab="profile">Profile</button>
+        <button data-tab="change">Password</button>
+      </div>
+      <form id="loginForm" class="auth-panel active">
+        <label>Email<input required type="email" id="loginEmail" placeholder="you@example.com" autocomplete="email"></label>
+        <label>Password<input required type="password" id="loginPassword" placeholder="••••••••" autocomplete="current-password"></label>
+        <button class="pill primary full">Login</button>
+      </form>
+      <form id="registerForm" class="auth-panel">
+        <label>Name<input required id="registerName" placeholder="Your name" autocomplete="name"></label>
+        <label>Email<input required type="email" id="registerEmail" placeholder="you@example.com" autocomplete="email"></label>
+        <label>Password<input required type="password" id="registerPassword" minlength="6" placeholder="Minimum 6 characters" autocomplete="new-password"></label>
+        <button class="pill primary full">Create Account</button>
+      </form>
+      <div id="profileForm" class="auth-panel profile-panel">
+        <div class="profile-card">
+          <div class="avatar" id="profileAvatar">LG</div>
+          <div>
+            <h3 id="profileName">Guest</h3>
+            <p class="muted" id="profileEmail">Login to view your profile.</p>
+          </div>
+        </div>
+        <div class="mini-stats">
+          <div><strong id="profileBookings">0</strong><span>Bookings</span></div>
+          <div><strong id="profileReviews">0</strong><span>Reviews</span></div>
+        </div>
+        <form class="profile-settings" id="profileSettingsForm">
+          <label>Profile picture
+            <input type="file" id="profilePfpInput" accept="image/png,image/jpeg,image/webp">
+          </label>
+          <div class="form-row two">
+            <label>Display name<input id="profileDisplayName" placeholder="Your name" autocomplete="name"></label>
+            <label>Phone<input id="profilePhone" placeholder="07919 082109" autocomplete="tel"></label>
+          </div>
+          <label>Theme glow
+            <select id="profileTheme">
+              <option value="blue">Blue / cyan</option>
+              <option value="dark">Dark clean</option>
+              <option value="ice">Ice white</option>
+            </select>
+          </label>
+          <button class="pill primary full" type="submit">Save Profile Settings</button>
+        </form>
+        <div id="profileBookingsList" class="booking-list"></div>
+        <button class="pill ghost full" id="profileLogout" type="button">Logout</button>
+      </div>
+      <form id="changeForm" class="auth-panel">
+        <label>New password<input required type="password" id="changePassword" minlength="6" placeholder="New secure password" autocomplete="new-password"></label>
+        <button class="pill primary full">Save New Password</button>
+      </form>
+      <div class="verify-box" id="verifyBox" hidden>
+        <h3>Email verification</h3>
+        <p class="muted">Enter the verification code from your LG Valeting email, or use the verification link in the email.</p>
+        <button class="pill ghost full" id="verifyEmailBtn">Verify Email</button>
+      </div>
+      <p class="tiny" id="authMsg"></p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script>window.LGV_PAGE="profile";</script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="/auth-config.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+LG Valeting final setup
+
+1) Supabase > SQL Editor: run SUPABASE_FULL_SETUP.sql.
+2) Make sure Authentication > URL Configuration includes:
+   https://lgvaleting.com/*
+   https://www.lgvaleting.com/*
+   https://admin.lgvaleting.com/*
+   https://*.pages.dev/*
+3) Upload the public ZIP to lgvaleting.com.
+4) Upload the admin ZIP to admin.lgvaleting.com.
+5) Register/verify your own account, then run the final UPDATE line in the SQL file with your email to make yourself master.
+6) Admins are promoted from existing registered users inside the admin panel. True hard-delete of auth users is still done in Supabase > Authentication > Users unless you later add a secure server/edge function with the service role key.
